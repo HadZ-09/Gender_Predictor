@@ -1,12 +1,4 @@
 
-torch
-torchvision
-numpy
-Pillow
-opencv-python
-fastapi
-uvicorn
-python-multipart
 streamlit
 requests
-scikit-learn
+Pillow
