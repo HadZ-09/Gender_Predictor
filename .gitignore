@@ -1,0 +1,30 @@
+
+# Dataset folders
+UTKFace/
+UTKFace_sorted/
+
+# Image files
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.bmp
+
+# Python cache
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment files
+.env
+
+# Ignore model checkpoints by default
+*.pt
+*.pth
+
+# Keep the trained model needed for deployment
+!weights/gender_resnet18.pt
