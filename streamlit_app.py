@@ -9,7 +9,7 @@ from io import BytesIO
 
 # ---------------- CONFIGURATION ----------------
 
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "https://gender-predictor-gakr.onrender.com/predict"
 
 # ---------------- PAGE CONFIG ----------------
 
