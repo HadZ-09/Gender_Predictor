@@ -43,10 +43,22 @@ image_file = None
 if input_method == "Upload Image":
 
     image_file = st.file_uploader(
-        "Upload a facial image",
+        "Upload a facial image ",
         type=["jpg", "jpeg", "png", "webp"]
     )
 
+if image_file is not None:
+  # 300 KB in bytes (300 * 1024)
+  MAX_FILE_SIZE = 300 * 1024
+
+  if image_file.size > MAX_FILE_SIZE:
+    st.error(
+        f"File size is too large ({image_file.size / 1024:.1f} KB). Please"
+        " upload an image under 300 KB."
+    )
+    st.stop()
+
+  image_bytes = image_file.getvalue()
 else:
 
     image_file = st.camera_input(
